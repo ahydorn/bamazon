@@ -50,10 +50,10 @@ View Low Inventory
 >low-inventory
 
 Add to Inventory
->add-inventory
+>add-inventory <integer>
 
 Add New Product
->add-product
+>add-product <product>
 
 If a manager selects View Products for Sale, the app should list every available item: the item IDs, names, prices, and quantities.
 
