@@ -44,12 +44,16 @@ Create a new Node application called bamazonManager.js. Running this application
 List a set of menu options:
 
 View Products for Sale
+>for-sale
 
 View Low Inventory
+>low-inventory
 
 Add to Inventory
+>add-inventory <integer>
 
 Add New Product
+>add-product <product>
 
 If a manager selects View Products for Sale, the app should list every available item: the item IDs, names, prices, and quantities.
 
@@ -114,3 +118,10 @@ One More Thing
 If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
 
 Good Luck!
+
+## Technologies Used
+
+* Javascript
+* Node
+* MySQL
+* Inquirer
