@@ -1,4 +1,4 @@
-# Bamazon
+# Bamazon 📦
 
 ## Overview
 For this activity, we were asked to creating an Amazon-like storefront with the using Node and MySQL. The app takes in orders from customers and depletes stock from the store's inventory. In addition, the app tracks product sales across the store's departments provides a summary of the highest-grossing departments in the store.
