@@ -3,6 +3,7 @@
 ### **Overview**
 
 ---
+
 ### **Installation**
 
 1. From terminal or git-terminal, navigate to your desired download directory and run the following:
@@ -12,6 +13,7 @@
 2. After installation, navigate inside the newly downloaded folder and run `npm install` or `npm i`. Note that you will need to have `node` installed.
 
 3. When complete, run the command `node bamazonManager.js`.
+
 ---
 
 ### **Usage**
@@ -40,6 +42,7 @@ If a user selects this option, the app will prompt the user to increase the avai
 **Add new item**
 ![image](link)
 If a user selects this option, it should allow the manager to add a new product to the store's inventory.
+
 ---
 
 ### Technologies Used
