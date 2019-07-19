@@ -29,8 +29,8 @@ function runSearch() {
         name: "action"
     }]).then(function(answer) {
         switch (answer.action) {
-            case "\t* View products for sale":
-                viewProducts();
+            case "\t* View items for sale":
+                viewItems();
                 break;
             case "\t* View low inventory":
                 viewLowInv();
@@ -38,8 +38,8 @@ function runSearch() {
             case "\t* Add to inventory":
                 addToInv();
                 break;
-            case "\t* Add new product":
-                addNewProd();
+            case "\t* Add new item":
+                addNewItem();
                 break;
             case "Exit":
                 process.exit(0);
@@ -47,7 +47,7 @@ function runSearch() {
         };
     });
 };
-const addNewProd = function() {
+const addNewItem = function() {
     console.log("\n\tAdding new item...\n");
     inquirer.prompt([{
         type: "input",
@@ -77,12 +77,12 @@ const addNewProd = function() {
             function(err, res) {
                 if (err) throw err;
                 console.log(res.affectedRows + "\n\tProduct inserted!\n");
-                viewProducts();
+                viewItems();
                 runSearch();
             })
     })
 };
-const viewProducts = function() {
+const viewItems = function() {
     connection.query("SELECT * FROM products", function(err, res) {
         if (err) throw err;
         console.table(res);
@@ -109,7 +109,7 @@ const addToInv = function() {
         name: "deptToAdd"
     }, {
         type: "input",
-        message: "How many would you like to add to the current stock?",
+        message: "How many would you like to add?",
         name: "moreAdded"
     }]).then(function(response) {
         connection.query("SELECT * FROM products WHERE ?", { product_name: response.deptToAdd }, function(err, res) {
@@ -121,7 +121,7 @@ const addToInv = function() {
                 { product_name: response.deptToAdd }
             ], function(err, results) {
                 if (err) throw err;
-                viewProducts();
+                viewItems();
             })
 
         })
