@@ -28,19 +28,19 @@ Upon running the app, the user will be presented with a menu containing the foll
 Use the `arrow keys` to highlight each option, then press `enter` or `return`.
 
 **View items for sale**
-![Kiku](images/assets/new-inv.jpg)
+![items-for-sale](/images/assets/items-for-sale.jpg)
 If a users selects this option, the app should list every available item, including the each item's ID, name, price, and in-stock quantity.
 
 **View low inventory**
-![image](link)
+![low-inventory](/images/assets/low-inv.jpg)
 Selecting this option will list all items with an inventory count lower than five.
 
 **Add to inventory**
-![image](link)
+![add-inv](/images/assets/add-inv.jpg)
 If a user selects this option, the app will prompt the user to increase the available inventory by the quantity specified.
 
 **Add new item**
-![image](link)
+![new-item](/images/assets/new-item.jpg)
 If a user selects this option, it should allow the manager to add a new product to the store's inventory.
 
 ---
