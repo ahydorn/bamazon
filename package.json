@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "## Overview For this activity, we were asked to creating an Amazon-like storefront with the using Node and MySQL. The app takes in orders from customers and depletes stock from the store's inventory. In addition, the app tracks product sales across the store's departments provides a summary of the highest-grossing departments in the store.",
+  "main": "bamazonCustomer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahydorn/bamazon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ahydorn/bamazon/issues"
+  },
+  "homepage": "https://github.com/ahydorn/bamazon#readme",
+  "dependencies": {
+    "inquirer": "^6.4.1",
+    "mysql": "^2.17.1"
+  }
+}
