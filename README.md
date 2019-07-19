@@ -28,7 +28,7 @@ Upon running the app, the user will be presented with a menu containing the foll
 Use the `arrow keys` to highlight each option, then press `enter` or `return`.
 
 **View items for sale**
-![image]("./assets/images/items-for-sale.jpg")
+![image](./assets/images/items-for-sale.jpg)
 If a users selects this option, the app should list every available item, including the each item's ID, name, price, and in-stock quantity.
 
 **View low inventory**
