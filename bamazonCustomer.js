@@ -6,7 +6,7 @@ var connection = mysql.createConnection({
     port: 3306,
     user: "root",
     password: "password",
-    database: "bamazon_db"
+    database: "bamazondb"
 });
 connection.connect(function(err) {
     if (err) throw err;
@@ -15,30 +15,30 @@ connection.connect(function(err) {
 });
 
 function runSearch() {
-    console.log("\n\t****************| Admin | ****************")
+    console.log("\n\t-------------| Admin |---------------")
     inquirer.prompt([{
         type: 'list',
         message: '\n\tSelect an option: \n\n',
         choices: [
-            "\t* View Products for Sale",
-            "\t* View Low Inventory",
-            "\t* Add to Inventory",
-            "\t* Add New Product",
+            "\t* View items for sale",
+            "\t* View low inventory",
+            "\t* Add item to inventory",
+            "\t* Add new item",
             "\t* Exit\n"
         ],
         name: "action"
     }]).then(function(answer) {
         switch (answer.action) {
-            case "\t* View Products for Sale":
+            case "\t* View products for sale":
                 viewProducts();
                 break;
-            case "\t* View Low Inventory":
+            case "\t* View low inventory":
                 viewLowInv();
                 break;
-            case "\t* Add to Inventory":
+            case "\t* Add to inventory":
                 addToInv();
                 break;
-            case "\t* Add New Product":
+            case "\t* Add new product":
                 addNewProd();
                 break;
             case "Exit":
@@ -48,10 +48,10 @@ function runSearch() {
     });
 };
 const addNewProd = function() {
-    console.log("\n\tInserting a new product...\n");
+    console.log("\n\tAdding new item...\n");
     inquirer.prompt([{
         type: "input",
-        message: "enter the name of the new product.",
+        message: "Enter the name of the new item.",
         name: "newItemName"
     }, {
         type: "input",
@@ -63,7 +63,7 @@ const addNewProd = function() {
         name: "newItemPrice"
     }, {
         type: "input",
-        message: "How many new items will be stocked?",
+        message: "How many will be stocked?",
         name: "newStockVal"
     }]).then(function(response) {
         console.log(response);
@@ -105,7 +105,7 @@ const viewLowInv = function() {
 const addToInv = function() {
     inquirer.prompt([{
         type: "input",
-        message: "Which item would you like to add?",
+        message: "What would you like to add?",
         name: "deptToAdd"
     }, {
         type: "input",
