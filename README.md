@@ -1,6 +1,8 @@
-# Bamazon Manager's View 📦
+# Bamazon Manager's View (Challenge #2) 📦
 
 ### **Overview**
+
+For this activity, we were asked to creating an Amazon-like storefront with the using Node and MySQL. This command-line app performs a variety of managerial inventory management functions.
 
 ---
 
