@@ -69,7 +69,7 @@ const addNewItem = function() {
         console.log(response);
         connection.query(
             "INSERT INTO products SET ?", {
-                product_name: response.newItemName,
+                item_name: response.newItemName,
                 department_name: response.newDeptName,
                 price: response.newItemPrice,
                 stock_quantity: response.newStockVal
@@ -112,13 +112,13 @@ const addToInv = function() {
         message: "How many would you like to add?",
         name: "moreAdded"
     }]).then(function(response) {
-        connection.query("SELECT * FROM products WHERE ?", { product_name: response.deptToAdd }, function(err, res) {
+        connection.query("SELECT * FROM products WHERE ?", { item_name: response.deptToAdd }, function(err, res) {
             if (err) throw err;
             console.log(res)
             var currentStock = res[0].stock_quantity;
             console.log(currentStock)
             connection.query("UPDATE products SET ? WHERE ?", [{ stock_quantity: parseInt(response.moreAdded) + parseInt(currentStock) },
-                { product_name: response.deptToAdd }
+                { item_name: response.deptToAdd }
             ], function(err, results) {
                 if (err) throw err;
                 viewItems();
