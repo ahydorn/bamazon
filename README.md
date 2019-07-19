@@ -35,7 +35,7 @@ If a users selects this option, the app should list every available item, includ
 ![image](https://user-images.githubusercontent.com/40612623/61552255-2a72b200-aa0c-11e9-878b-253f54059262.png)  
 Selecting this option will list all items with an inventory count lower than five.
 
-**Add stock to inventory**  
+**Add to inventory**  
 ![image](https://user-images.githubusercontent.com/40612623/61552233-1af36900-aa0c-11e9-9472-1d1a03ea1b61.png)  
 If a user selects this option, the app will prompt the user to increase the available inventory by the quantity specified.
 
