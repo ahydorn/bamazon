@@ -28,19 +28,19 @@ Upon running the app, the user will be presented with a menu containing the foll
 Use the `arrow keys` to highlight each option, then press `enter` or `return`.
 
 **View items for sale**
-![items-for-sale](/images/assets/items-for-sale.png)
+![image](https://user-images.githubusercontent.com/40612623/61552247-25adfe00-aa0c-11e9-8d94-295f5122a002.png)
 If a users selects this option, the app should list every available item, including the each item's ID, name, price, and in-stock quantity.
 
 **View low inventory**
-![low-inventory](/images/assets/low-inv.png)
+![image](https://user-images.githubusercontent.com/40612623/61552255-2a72b200-aa0c-11e9-878b-253f54059262.png)
 Selecting this option will list all items with an inventory count lower than five.
 
 **Add to inventory**
-![add-inv](/images/assets/add-inv.png)
+![image](https://user-images.githubusercontent.com/40612623/61552233-1af36900-aa0c-11e9-9472-1d1a03ea1b61.png)
 If a user selects this option, the app will prompt the user to increase the available inventory by the quantity specified.
 
 **Add new item**
-![new-item](/images/assets/new-item.png)
+![image](https://user-images.githubusercontent.com/40612623/61552264-2f376600-aa0c-11e9-8055-f88bd31c65aa.png)
 If a user selects this option, it should allow the manager to add a new product to the store's inventory.
 
 ---
@@ -52,8 +52,4 @@ If a user selects this option, it should allow the manager to add a new product 
 * MySQL
 * Inquirer
 
-![image](https://user-images.githubusercontent.com/40612623/61552233-1af36900-aa0c-11e9-9472-1d1a03ea1b61.png)
-![image](https://user-images.githubusercontent.com/40612623/61552247-25adfe00-aa0c-11e9-8d94-295f5122a002.png)
-![image](https://user-images.githubusercontent.com/40612623/61552255-2a72b200-aa0c-11e9-878b-253f54059262.png)
-![image](https://user-images.githubusercontent.com/40612623/61552264-2f376600-aa0c-11e9-8055-f88bd31c65aa.png)
 
